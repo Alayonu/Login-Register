@@ -1,0 +1,57 @@
+<doctypehtml>
+<head>
+	<title>Swipe page</title>
+	<link rel="stylesheet" href="login.css">
+	</head>
+<body>
+	<div class="formbox">
+<div class="input-group">
+	<div class="box-button">
+		<div id="btn"></div>
+		<button type="button" class="toggle" onclick="login()">Login</button>
+		<button type="button" class="toggle" onclick="register()">Register</button>
+		</div>
+	
+	<div class="social-icons">
+		<a href="https://github.com/Alayonu"> <img src="ball.png"></a>
+		<a href="https://mobile.twitter.com/Estherolaniyi8"><img src="twitter.png"></a>
+		<a href="https://github.com/Alayonu"> <img src="insta.png"></a>
+	</div>
+		<form id="llgin" class="input">
+	<input type="text" class="input-field" placeholder="User Id" required><br> <br>
+    <input type="text" class="input-field" placeholder="Enter-Password" required><br> <br>
+    <input type="checkbox" class="check-box"><span>Remember Password</span><br><br>
+    <button type="submit" class="submit-btn">Log In</button>
+	</form>
+	
+	<form id="register" class="input">
+	<input type="text" class="input-field" placeholder="User Id" required><br><br>
+    <input type="text" class="input-field" placeholder="Email Id" required><br> <br>
+    <input type="text" class="input-field" placeholder="Enter-Password" required><br><br>
+    <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+    <button type="submit" class="submit-btn">Register</button>
+	</form>
+	</div>
+	</div>
+	<script>
+	var x = document.getElementById("llgin");
+	var y = document.getElementById("register");
+	var z = document.getElementById("btn");
+	
+		function register(){
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+		function login(){
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0px";
+		}
+	
+	
+	
+	</script>
+</body>
+</doctypehtml>
+	
